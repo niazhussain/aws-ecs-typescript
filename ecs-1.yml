@@ -12,10 +12,10 @@ Resources:
   ACMCertificate:
     Type: AWS::CertificateManager::Certificate
     Properties: 
-      DomainName: !Sub "api.${DomainName}"
+      DomainName: !Sub "ci.${DomainName}"
       DomainValidationOptions:
-        - DomainName: !Sub "api.${DomainName}"
-          ValidationDomain: !Sub "api.${DomainName}"
+        - DomainName: !Sub "ci.${DomainName}"
+          ValidationDomain: !Sub "ci.${DomainName}"
       ValidationMethod: DNS
   Cluster:
     Type: AWS::ECS::Cluster

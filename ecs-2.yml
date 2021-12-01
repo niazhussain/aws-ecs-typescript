@@ -123,9 +123,9 @@ Resources:
       TaskRoleArn: !Ref TaskRole
       ContainerDefinitions:
         - Name: aws-ecs-typescript-container
-          Image: nginx:1.17.7
+          #Image: nginx:1.17.7
           # REPLACE WITH YOUR ACCOUNT NUMBER AND REGION
-          # Image: YOUR_AWS_ACCOUNT_NUMBER.dkr.ecr.YOUR_AWS_REGION.amazonaws.com/aws-ecs-typescript-api
+          Image: 041640568050.dkr.ecr.eu-central-1.amazonaws.com/github-actions-poc
           PortMappings:
             - ContainerPort: 8080
           LogConfiguration:
