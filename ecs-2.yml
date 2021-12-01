@@ -125,7 +125,7 @@ Resources:
         - Name: aws-ecs-typescript-container
           #Image: nginx:1.17.7
           # REPLACE WITH YOUR ACCOUNT NUMBER AND REGION
-          Image: 041640568050.dkr.ecr.eu-central-1.amazonaws.com/github-actions-poc
+          Image: 041640568050.dkr.ecr.eu-central-1.amazonaws.com/aws-ecs-typescript-api
           PortMappings:
             - ContainerPort: 8080
           LogConfiguration:
