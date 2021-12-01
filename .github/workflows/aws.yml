@@ -32,7 +32,7 @@ name: Deploy to Amazon ECS
 
 jobs:
   deploy:
-    name: Deploy to ECS 
+    name: Deploy to ECS .... 
     runs-on: self-hosted
     steps:
       - name: Checkout
